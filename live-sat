@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,12 +24,11 @@
     <input id="secs" type="number" min="10" step="5" value="60" />
     <button id="apply">Apply</button>
     <button id="refreshNow">Refresh</button>
-    #Open image</a>
+    <a id="open" href="#" target="_blank">Open image</a>
   </div>
 
   <script>
     // TODO: Paste a direct image URL (PNG or GIF) to the product you want.
-    // Example placeholder: replace the entire string below with the real URL.
     const IMG_BASE = 'https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/smv/GEOCOLOR/20252862101_GOES19-ABI-smv-GEOCOLOR-2400x2400.jpg';
 
     const img = document.getElementById('sat');
@@ -65,5 +63,3 @@
   </script>
 </body>
 </html>
-
-

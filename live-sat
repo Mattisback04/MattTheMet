@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,7 +30,7 @@
   <script>
     // TODO: Paste a direct image URL (PNG or GIF) to the product you want.
     // Example placeholder: replace the entire string below with the real URL.
-    const IMG_BASE = '<<DIRECT_IMAGE_URL>>';
+    const IMG_BASE = 'https://weather.ral.ucar.edu/data/satellite/20251013/LIT/color/20251013_172235_LIT.jpg';
 
     const img = document.getElementById('sat');
     const meta = document.getElementById('meta');

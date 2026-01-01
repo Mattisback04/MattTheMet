@@ -1026,14 +1026,14 @@ function HomePage() {
               <div className="mb-4">•   Minors: Math & Sociology</div>
               <div>•   Mississippi State University (May 2026)</div>
             </InfoCard>
-              <InfoCard title={<span className="block w-full text-center">Skills</span>}>
-              <div className="mb-4">•   Python</div>
-              <div className="mb-4">•   ArcGIS Pro</div>
-              <div className="mb-4">•   SAS (statistical analysis software)</div>
-              <div className="mb-4">•   Data analysis</div>
-              <div className="mb-4">•   Predictive modeling</div>
-              <div className="mb-4">•   Research communication</div>
-              <div>•   Visualization</div>
+              <InfoCard title="Skills">
+              <div className="mb-4">  •   Python</div>
+              <div className="mb-4">  •   ArcGIS Pro</div>
+              <div className="mb-4">  •   SAS (statistical analysis software)</div>
+              <div className="mb-4">  •   Data analysis</div>
+              <div className="mb-4">  •   Predictive modeling</div>
+              <div className="mb-4">  •   Research communication</div>
+              <div>  •   Visualization</div>
               </InfoCard>
               <InfoCard title="Certifications">NWS Trained Storm Spotter (2021)</InfoCard>
             </div>

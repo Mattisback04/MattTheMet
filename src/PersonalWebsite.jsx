@@ -978,7 +978,7 @@ function HomePage() {
           >
             <div
               className={cx(
-                "relative w-44 h-44 sm:w-52 sm:h-52",
+                "relative w-56 h-56 sm:w-64 sm:h-64",
                 "rounded-3xl overflow-hidden shadow-xl",
                 "border-4 border-transparent",
                 "bg-gradient-to-tr from-sky-500 to-emerald-500 p-[2px]"

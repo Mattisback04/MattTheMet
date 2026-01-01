@@ -1024,7 +1024,7 @@ function HomePage() {
             <InfoCard title="Education">
               <div className="mb-4">•   B.S. in Geosciences (Professional Meteorology)</div>
               <div className="mb-4">•   Minors: Math & Sociology</div>
-              <div>•  Mississippi State University (May 2026)</div>
+              <div>•   Mississippi State University (May 2026)</div>
             </InfoCard>
               <InfoCard title="Skills">
                 Python, ArcGIS Pro, SAS (statistical analysis software), data analysis, predictive modeling, research communication, visualization

@@ -1027,7 +1027,13 @@ function HomePage() {
               <div>•   Mississippi State University (May 2026)</div>
             </InfoCard>
               <InfoCard title="Skills">
-                Python, ArcGIS Pro, SAS (statistical analysis software), data analysis, predictive modeling, research communication, visualization
+              <div className="mb-4">•   Python</div>
+              <div className="mb-4">•   ArcGIS Pro</div>
+              <div className="mb-4">•   SAS (statistical analysis software)</div>
+              <div className="mb-4">•   Data analysis</div>
+              <div className="mb-4">•   Predictive modeling</div>
+              <div className="mb-4">•   Research communication</div>
+              <div>•   Visualization</div>
               </InfoCard>
               <InfoCard title="Certifications">NWS Trained Storm Spotter (2021)</InfoCard>
             </div>

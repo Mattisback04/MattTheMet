@@ -1045,7 +1045,7 @@ function HomePage() {
               </Callout>
 
               <Callout title={<span className="block w-full text-center">Research Focus</span>} tone="slate">
-                My research portfolio centers on the intersection of synoptic-scale dynamics and societal resilience, investigating how extreme weather triggers influence public risk perception. I am dedicated to integrating the principles of Weather, Climate, and Society (WCS) into the study of high-impact events, with a specific focus on optimizing protective action and communication strategies for diverse and marginalized communities.
+                My research portfolio centers on the intersection of synoptic-scale dynamics and societal resilience, investigating how extreme weather triggers influence public risk perception. I am dedicated to integrating the principles of weather, climate, and society into the study of high-impact events, with a specific focus on optimizing protective action and communication strategies for diverse and marginalized communities.
               </Callout>
 
               <Callout title={<span className="block w-full text-center">Professional Interests</span>} tone="slate">

@@ -1026,7 +1026,7 @@ function HomePage() {
               <div className="mb-4">•   Minors: Math & Sociology</div>
               <div>•   Mississippi State University (May 2026)</div>
             </InfoCard>
-              <InfoCard title="Skills">
+              <InfoCard title={<span className="block w-full text-center">Skills</span>}>
               <div className="mb-4">•   Python</div>
               <div className="mb-4">•   ArcGIS Pro</div>
               <div className="mb-4">•   SAS (statistical analysis software)</div>

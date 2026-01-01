@@ -25,7 +25,7 @@ export default function Home() {
 
         <p className="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-200">
           Senior meteorology student at Mississippi State University focusing on wildfire climatology,
-          climate modeling, and weather communication.
+          climate modeling, synoptic meteorology and weather communication.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-4">
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center md:justify-end">
-        <div className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-3xl overflow-hidden shadow-xl border-4 border-transparent bg-gradient-to-tr from-sky-500 to-emerald-500 p-[2px]">
+        <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-xl border-4 border-transparent bg-gradient-to-tr from-sky-500 to-emerald-500 p-[2px]">
           <img
             alt={`Portrait of ${profile.name}`}
             src={profile.portrait}

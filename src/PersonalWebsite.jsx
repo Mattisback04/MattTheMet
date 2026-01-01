@@ -916,8 +916,8 @@ function HomePage() {
           >
             <div className="flex flex-wrap items-center gap-2">
               <Badge tone="sky">Meteorology</Badge>
-              <Badge tone="emerald">Wildfire climatology</Badge>
-              <Badge tone="slate">Weather communication</Badge>
+              <Badge tone="emerald">Wildfire Climatology</Badge>
+              <Badge tone="slate">Weather Communication</Badge>
             </div>
 
             <h1 className="mt-5 text-4xl sm:text-5xl font-extrabold leading-tight">
@@ -928,7 +928,7 @@ function HomePage() {
 
             <p className="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-200">
               I’m a senior meteorology student at Mississippi State University, focusing on wildfire climatology,
-              climate modeling, and weather communication. I love using research to help communities prepare for
+              climate modeling, synoptic meteorology, and weather communication. I love using research to help people prepare for
               severe weather and long-term climate risks.
             </p>
 
@@ -1016,17 +1016,17 @@ function HomePage() {
             <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed text-slate-700 dark:text-slate-200">
               <span className="font-semibold">4.0 GPA</span> • Shackouls Honors College • Python &amp; ArcGIS Pro
               <br />
-              I’m interested in the intersection of weather, climate, and society — especially how we communicate risk
+              I’m interested in the intersection of weather, climate, and society, especially how we communicate risk
               to diverse communities and improve decision-making during high-impact events.
             </p>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
               <InfoCard title="Education">
-                B.S. in Geosciences (Professional Meteorology) • Minors: Math &amp; Sociology • Mississippi State
+                B.S. in Geosciences (Professional Meteorology) | Minors: Math &amp; Sociology | Mississippi State
                 University (May 2026)
               </InfoCard>
               <InfoCard title="Skills">
-                Python, ArcGIS Pro, data analysis, predictive modeling, research communication, visualization
+                Python, ArcGIS Pro, SAS (statistical analysis software), data analysis, predictive modeling, research communication, visualization
               </InfoCard>
               <InfoCard title="Certifications">NWS Trained Storm Spotter (2021)</InfoCard>
             </div>
@@ -1082,7 +1082,7 @@ function ResearchPage() {
               <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
                 I’m investigating how international students at Mississippi State University perceive severe weather and
                 its risks. I’m focusing on how prior weather experience, language and cultural context, and warning
-                comprehension shape decision-making — plus which channels (sirens, Wireless Emergency Alerts, social
+                comprehension shape decision-making, plus which channels (sirens, Wireless Emergency Alerts, social
                 media, peers, etc.) students trust during severe weather events.
               </p>
 

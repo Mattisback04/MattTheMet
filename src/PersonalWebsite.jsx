@@ -1035,7 +1035,10 @@ function HomePage() {
               <div className="mb-4">  •   Research communication</div>
               <div>  •   Visualization</div>
               </InfoCard>
-              <InfoCard title="Certifications">NWS Trained Storm Spotter (2021)</InfoCard>
+              <InfoCard title="Certifications">
+                <div className="mb-4">  •   CITI Program Certified (Social & Behavioral Research)</div>
+              <div>  •   NWS Skywarn Trained Storm Spotter</div>
+              </InfoCard>
             </div>
 
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -1525,10 +1525,29 @@ function ContactPage() {
                     <CalendarIcon className="h-4 w-4 text-sky-700 dark:text-sky-200" />
                     Graduation: May 2026
                   </div>
-                  <div className="flex items-center gap-2">
-                    <SparklesIcon className="h-4 w-4 text-sky-700 dark:text-sky-200" />
-                    Interests: synoptic meteorology, wildfire climatology, weather and society principles, probabilistic modeling, and statistical methods in meteorology
-                  </div>
+                 <div className="mt-4 flex flex-col gap-3">
+  <div className="flex items-center gap-2 text-sky-800 dark:text-sky-300 font-semibold uppercase text-xs tracking-wider">
+    <SparklesIcon className="h-4 w-4" />
+    Research Interests
+  </div>
+  
+  <div className="flex flex-wrap gap-2">
+    {[
+      "synoptic meteorology",
+      "wildfire climatology",
+      "weather & society principles",
+      "probabilistic modeling",
+      "statistical methods"
+    ].map((interest) => (
+      <span 
+        key={interest}
+        className="px-3 py-1 rounded-full text-sm font-medium bg-sky-100/50 text-sky-800 ring-1 ring-sky-900/10 dark:bg-sky-900/30 dark:text-sky-200 dark:ring-sky-400/20"
+      >
+        {interest}
+      </span>
+    ))}
+  </div>
+</div>
                 </div>
               </div>
             </div>

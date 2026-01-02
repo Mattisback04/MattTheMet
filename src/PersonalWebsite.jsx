@@ -1458,13 +1458,13 @@ function ContactPage() {
             <SectionHeading
               icon={EnvelopeIcon}
               title="Contact"
-              subtitle="Open to collaborations, internships, and graduate research discussions."
+              subtitle="Open to collaborations, internships, and graduate research opportunities."
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
               <div className="lg:col-span-2">
                 <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
-                  Whether you’re interested in collaborating on research, discussing internship opportunities, or simply want to chat about a shared love for the weather, I’d love to hear from you. Email is the best way to reach me, and I’m also active on LinkedIn.
+                  Whether you’re interested in collaborating on research, discussing internship openings, or simply want to chat about a shared love for the weather, I’d love to hear from you. Email is the best way to reach me, and I’m also active on LinkedIn.
                 </p>
 
                 <div className="mt-7 flex flex-col sm:flex-row gap-4">

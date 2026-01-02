@@ -1114,7 +1114,7 @@ function ResearchPage() {
               {/* Badges - Pushed to bottom */}
               <div className="mt-auto pt-6 flex flex-wrap gap-2">
                 <Badge tone="sky">Risk Communication</Badge>
-                <Badge tone="emerald">Decision-Making</Badge>
+                <Badge tone="emerald">Weather & Society</Badge>
                 <Badge tone="slate">Survey Research</Badge>
               </div>
             </div>
@@ -1127,7 +1127,7 @@ function ResearchPage() {
               
               <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
                 I am a student researcher for the SEMBRAR project, a multidisciplinary initiative fostering 
-                environmental literacy among multilingual learners. I analyze how synoptic-scale dynamics 
+                environmental literacy among multilingual learners. I analyze how synoptic-scale processes 
                 translate into localized environmental risks.
               </p>
               
@@ -1152,8 +1152,8 @@ function ResearchPage() {
               {/* Badges */}
               <div className="mt-auto pt-6 flex flex-wrap gap-2">
                  <Badge tone="emerald">Bilingual Education</Badge>
-                 <Badge tone="sky">Synoptic Dynamics</Badge>
-                 <Badge tone="slate">Community Advocacy</Badge>
+                 <Badge tone="sky">Synoptic Meteorology</Badge>
+                 <Badge tone="slate">Social Research</Badge>
               </div>
             </div>
 

@@ -1082,16 +1082,15 @@ function ResearchPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             {/* --- LEFT COLUMN: Honors Thesis --- */}
-            <div className="h-full rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
+            <div className="h-full flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
               <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50">
-                Current Role (Honors Thesis): Severe Weather Risk Perception Among MSU International Students
+                Honors Thesis: Severe Weather Risk Perception
               </h3>
 
               <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
                 I’m investigating how international students at Mississippi State University perceive severe weather and
                 its risks. I’m focusing on how prior weather experience, language and cultural context, and warning
-                comprehension shape decision-making, plus which channels (sirens, Wireless Emergency Alerts, social
-                media, peers, etc.) students trust during severe weather events.
+                comprehension shape decision-making, plus which channels (sirens, WEA, social media) students trust.
               </p>
 
               <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
@@ -1099,7 +1098,7 @@ function ResearchPage() {
                 risk communication that reduces confusion and improves action.
               </p>
 
-              {/* NEW: Presentation Highlight for Thesis */}
+              {/* Presentation Highlight: Thesis */}
               <div className="mt-6 border-l-4 border-sky-500 pl-4 py-1 bg-sky-50/50 dark:bg-sky-900/10 rounded-r-lg">
                 <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
                   Upcoming Presentation
@@ -1112,48 +1111,52 @@ function ResearchPage() {
                 </p>
               </div>
 
-              <div className="mt-6 flex flex-wrap gap-2">
+              {/* Badges - Pushed to bottom */}
+              <div className="mt-auto pt-6 flex flex-wrap gap-2">
                 <Badge tone="sky">Risk Communication</Badge>
                 <Badge tone="emerald">Decision-Making</Badge>
                 <Badge tone="slate">Survey Research</Badge>
-                <Badge tone="sky">Warning Comprehension</Badge>
-                <Badge tone="emerald">Cultural Context</Badge>
               </div>
             </div>
 
             {/* --- RIGHT COLUMN: SEMBRAR & Contact --- */}
             <div className="space-y-6">
               
-              {/* SEMBRAR Card */}
-              <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
-                <div className="space-y-4">
-                  <h3 className="text-lg font-bold text-emerald-900 dark:text-emerald-400">
-                    Current Role: SEMBRAR Mississippi & Florida
-                  </h3>
-                  
-                  <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                    I am a student researcher for the SEMBRAR project, a multidisciplinary initiative fostering 
-                    environmental literacy among multilingual learners. I analyze how various meteorological aspects 
-                    translate into localized environmental risks.
-                  </p>
-                  
-                  <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                    By applying weather, climate, and society principles, I develop ways to communicate 
-                    these complex weather and environmental phenomena to diverse communities, integrating place-based education.
-                  </p>
+              {/* SEMBRAR Card - Now matches Thesis styling exactly */}
+              <div className="h-full flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
+                <h3 className="text-xl font-bold text-emerald-900 dark:text-emerald-400">
+                  Current Role: SEMBRAR Mississippi & Florida
+                </h3>
+                
+                <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+                  I am a student researcher for the SEMBRAR project, a multidisciplinary initiative fostering 
+                  environmental literacy among multilingual learners. I analyze how various meteorological aspects 
+                  translate into localized environmental risks.
+                </p>
+                
+                <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+                  By applying weather, climate, and society principles, I develop ways to communicate 
+                  these complex weather and environmental phenomena to diverse communities, integrating place-based education.
+                </p>
 
-                  {/* Presentation Highlight for SEMBRAR */}
-                  <div className="mt-4 border-l-4 border-emerald-500 pl-4 py-1 bg-emerald-50/50 dark:bg-emerald-900/10 rounded-r-lg">
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                      Upcoming Presentation
-                    </h4>
-                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
-                      <span className="font-semibold text-emerald-700 dark:text-emerald-400 block mb-1">
-                        MSU Undergraduate Research Symposium (Spring 2026)
-                      </span>
-                      Presenting research on the intersection of atmospheric physics and community advocacy within a bilingual framework.
-                    </p>
-                  </div>
+                {/* Presentation Highlight: SEMBRAR - Matches styling of Thesis highlight */}
+                <div className="mt-6 border-l-4 border-emerald-500 pl-4 py-1 bg-emerald-50/50 dark:bg-emerald-900/10 rounded-r-lg">
+                  <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                    Upcoming Presentation
+                  </h4>
+                  <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                    <span className="font-semibold text-emerald-700 dark:text-emerald-400 block mb-1">
+                      MSU Undergraduate Research Symposium (Spring 2026)
+                    </span>
+                    Presenting research on the intersection of atmospheric physics and community advocacy within a bilingual framework.
+                  </p>
+                </div>
+                
+                {/* Badges - Added to match the layout of the left card */}
+                <div className="mt-auto pt-6 flex flex-wrap gap-2">
+                   <Badge tone="emerald">Bilingual Education</Badge>
+                   <Badge tone="sky">Synoptic Dynamics</Badge>
+                   <Badge tone="slate">Community Advocacy</Badge>
                 </div>
               </div>
 

@@ -1078,10 +1078,13 @@ function ResearchPage() {
             subtitle="Honors thesis focus and current research direction."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
+          {/* Grid Layout: 2 Columns (50/50 split) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            {/* --- LEFT COLUMN: Honors Thesis --- */}
+            <div className="h-full rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
               <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50">
-                Honors thesis: severe weather risk perception (MSU international students)
+                Current Role (Honors Thesis): Severe Weather Risk Perception Among MSU International Students
               </h3>
 
               <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
@@ -1096,6 +1099,19 @@ function ResearchPage() {
                 risk communication that reduces confusion and improves action.
               </p>
 
+              {/* NEW: Presentation Highlight for Thesis */}
+              <div className="mt-6 border-l-4 border-sky-500 pl-4 py-1 bg-sky-50/50 dark:bg-sky-900/10 rounded-r-lg">
+                <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                  Upcoming Presentation
+                </h4>
+                <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                  <span className="font-semibold text-sky-700 dark:text-sky-400 block mb-1">
+                    2026 Southeast Severe Storms Symposium
+                  </span>
+                  Presenting findings on risk perception gaps and warning channel trust among diverse student populations.
+                </p>
+              </div>
+
               <div className="mt-6 flex flex-wrap gap-2">
                 <Badge tone="sky">Risk Communication</Badge>
                 <Badge tone="emerald">Decision-Making</Badge>
@@ -1105,29 +1121,53 @@ function ResearchPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50">
-                Current role: SEMBRAR Mississippi &amp; Florida
-              </h3>
+            {/* --- RIGHT COLUMN: SEMBRAR & Contact --- */}
+            <div className="space-y-6">
+              
+              {/* SEMBRAR Card */}
+              <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
+                <div className="space-y-4">
+                  <h3 className="text-lg font-bold text-emerald-900 dark:text-emerald-400">
+                    Current Role: SEMBRAR Mississippi & Florida
+                  </h3>
+                  
+                  <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                    I am a student researcher for the SEMBRAR project, a multidisciplinary initiative fostering 
+                    environmental literacy among multilingual learners. I analyze how various meteorological aspects 
+                    translate into localized environmental risks.
+                  </p>
+                  
+                  <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                    By applying weather, climate, and society principles, I develop ways to communicate 
+                    these complex weather and environmental phenomena to diverse communities, integrating place-based education.
+                  </p>
 
-              <p className="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
-                I was recently hired to work with Dr. Cardozo Gaibisso on the <em>SEMBRAR Mississippi &amp; Florida</em>{" "}
-                project. I’ll add specifics here as the role takes shape, but I’m excited to contribute as details are
-                finalized.
-              </p>
-
-              <div className="mt-6 rounded-xl bg-emerald-50 p-4 ring-1 ring-emerald-100 dark:bg-emerald-950/40 dark:ring-emerald-900/60">
-                <p className="text-sm text-emerald-900 dark:text-emerald-200">
-                  If you’re interested in collaborating or have relevant datasets, feel free to reach out.
-                </p>
+                  {/* Presentation Highlight for SEMBRAR */}
+                  <div className="mt-4 border-l-4 border-emerald-500 pl-4 py-1 bg-emerald-50/50 dark:bg-emerald-900/10 rounded-r-lg">
+                    <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                      Upcoming Presentation
+                    </h4>
+                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                      <span className="font-semibold text-emerald-700 dark:text-emerald-400 block mb-1">
+                        MSU Undergraduate Research Symposium (Spring 2026)
+                      </span>
+                      Presenting research on the intersection of atmospheric physics and community advocacy within a bilingual framework.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-6">
+              {/* Contact / Call to Action Card */}
+              <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-black/5 dark:bg-white/5 dark:ring-white/10">
+                <p className="mb-4 text-sm font-medium text-slate-900 dark:text-slate-200">
+                   Questions? Feel free to reach out!
+                </p>
                 <PrimaryLink to="/contact" className="w-full justify-center">
-                  Contact
-                  <EnvelopeIcon className="h-5 w-5" />
+                  Contact Me
+                  <EnvelopeIcon className="h-4 w-4 ml-2" />
                 </PrimaryLink>
               </div>
+
             </div>
           </div>
         </motion.div>

@@ -1527,17 +1527,17 @@ function ContactPage() {
                   </div>
                  <div className="mt-4 flex flex-col gap-3">
   <div className="flex items-center gap-2 text-sky-800 dark:text-sky-300 font-semibold uppercase text-xs tracking-wider">
-    <SparklesIcon className="h-4 w-4" />
-    Research Interests
+    <SparklesIcon className="h-5 w-5" />
+    Interests
   </div>
   
   <div className="flex flex-wrap gap-2">
     {[
-      "synoptic meteorology",
-      "wildfire climatology",
-      "weather & society principles",
-      "probabilistic modeling",
-      "statistical methods"
+      "Synoptic meteorology",
+      "Wildfire climatology",
+      "Weather and society principles",
+      "Probabilistic modeling",
+      "Statistical methods"
     ].map((interest) => (
       <span 
         key={interest}

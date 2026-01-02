@@ -1529,7 +1529,7 @@ function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <SparklesIcon className="h-4 w-4 text-sky-700 dark:text-sky-200" />
-                    Interests: wildfire, climate extremes, communication
+                    Interests: synoptic meteorology, wildfire climatology, weather and society principles, probabilistic modeling, and statistical methods in meteorology
                   </div>
                 </div>
               </div>

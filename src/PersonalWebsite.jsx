@@ -1367,33 +1367,42 @@ function SurveyPage() {
             <SectionHeading
               icon={DocumentTextIcon}
               title="International Student Survey"
-              subtitle="Anonymous responses to better understand severe weather perception and information needs."
+              subtitle="Data collection for this phase is now complete."
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
               <div className="lg:col-span-2">
-                <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
-                  I’m gathering anonymous responses from international students to better understand how severe weather
-                  is perceived and what information helps most. Your input is voluntary and takes about{" "}
-                  <span className="font-semibold">5–7 minutes</span>. Thank you for helping move this research forward.
+                {/* Status Banner */}
+                <div className="mb-6 rounded-lg border border-emerald-200 bg-emerald-100/50 p-4 dark:border-emerald-800 dark:bg-emerald-900/20">
+                  <p className="flex items-center gap-2 text-lg font-semibold text-emerald-800 dark:text-emerald-200">
+                    <span>🎉</span>
+                    Thanks to the over 200 international student respondents!
+                  </p>
+                  <p className="mt-1 text-emerald-700 dark:text-emerald-300">
+                    The survey is currently complete. Raffle winners will be announced in{" "}
+                    <span className="font-bold">January</span>.
+                  </p>
+                </div>
+
+                <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200">
+                  I gathered anonymous responses from international students to better understand how severe weather is
+                  perceived and what information helps most. Your input is vital to this study. Thank you for helping
+                  move this research forward.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a
-                    href="https://survey.survicate.com/a3a2ec75e7662dee/?p=intercom&first_name={{first_name}}&last_name={{last_name}}&email={{email}}&uid={{user_id}}"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  {/* Disabled Button Indicator */}
+                  <button
+                    disabled
                     className={cx(
-                      "inline-flex items-center justify-center gap-2",
-                      "px-5 py-3 rounded-md font-semibold text-white shadow-lg",
-                      "bg-gradient-to-r from-sky-600 to-emerald-500",
-                      "hover:brightness-110 hover:-translate-y-[1px] transition",
-                      "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+                      "inline-flex cursor-not-allowed items-center justify-center gap-2",
+                      "rounded-md bg-slate-200 px-5 py-3 font-semibold text-slate-500 shadow-sm",
+                      "dark:bg-slate-800 dark:text-slate-400"
                     )}
                   >
-                    Take the Survey
-                    <DocumentTextIcon className="h-5 w-5" />
-                  </a>
+                    Survey Closed
+                    <DocumentTextIcon className="h-5 w-5 opacity-50" />
+                  </button>
 
                   <OutlineLink to="/contact">
                     Questions?
@@ -1402,24 +1411,24 @@ function SurveyPage() {
                 </div>
 
                 <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">
-                  Note: Responses are anonymous. Please avoid sharing personally identifying information in open-ended
-                  answers.
+                  Note: All responses collected remain anonymous.
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-6 ring-1 ring-black/5 shadow-sm dark:bg-slate-950 dark:ring-white/10">
+              {/* Sidebar */}
+              <div className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-black/5 dark:bg-slate-950 dark:ring-white/10">
                 <h4 className="font-semibold text-slate-900 dark:text-slate-50">What the survey helps with</h4>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-200">
                   <li className="flex gap-2">
-                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" />
+                    <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                     Identify trusted warning channels
                   </li>
                   <li className="flex gap-2">
-                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" />
+                    <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                     Reduce confusion during severe weather
                   </li>
                   <li className="flex gap-2">
-                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" />
+                    <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                     Improve culturally responsive communication
                   </li>
                 </ul>

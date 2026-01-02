@@ -841,7 +841,6 @@ function SiteLayout({ children }) {
                 © {new Date().getFullYear()} {profile.name}. All rights reserved.
               </p>
               <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                Built with React, Tailwind CSS, and Framer Motion.
               </p>
             </div>
 
@@ -1459,14 +1458,20 @@ function ContactPage() {
             <SectionHeading
               icon={EnvelopeIcon}
               title="Contact"
-              subtitle="Open to collaborations, internships, and research discussions."
+              subtitle="Open to collaborations, internships, and graduate research discussions."
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
               <div className="lg:col-span-2">
                 <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
-                  If you’d like to connect about research, internships, or collaboration opportunities, email is best.
-                  I’m also active on LinkedIn.
+                  To give your contact section a professional yet approachable "weather enthusiast" vibe, it's best to balance your technical research goals with your genuine passion for the field.
+
+Here are a few ways to phrase this, ranging from professional to a bit more "met-focused."
+
+Option 1: The "Research & Community" Flow
+Best for a standard professional portfolio.
+
+"Whether you’re interested in collaborating on research, discussing internship opportunities, or simply want to chat about a shared love for the weather, I’d love to hear from you. Email is the best way to reach me, and I’m also active on LinkedIn.
                 </p>
 
                 <div className="mt-7 flex flex-col sm:flex-row gap-4">

@@ -1455,28 +1455,27 @@ function ContactPage() {
               "dark:bg-slate-950/60 dark:ring-white/10"
             )}
           >
-            <SectionHeading
-              icon={EnvelopeIcon}
-              title="Contact"
-              subtitle="Open to collaborations, internships, and graduate research opportunities."
-            />
+            {/* The Grid now starts at the very top of the section */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+              
+              {/* LEFT COLUMN: Heading + Body */}
+              <div className="lg:col-span-2 space-y-6">
+                <SectionHeading
+                  icon={EnvelopeIcon}
+                  title="Contact"
+                  subtitle="Open to collaborations, internships, and graduate school discussions."
+                />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-              <div className="lg:col-span-2">
                 <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
-                  Whether you’re interested in collaborating on research, discussing internship openings, or simply want to chat about a shared love for the weather, I’d love to hear from you. Email is the best way to reach me, and I’m also active on LinkedIn.
+                  Whether you’re interested in collaborating on research, discussing internship openings, 
+                  or simply want to chat about a shared love for the weather, I’d love to hear from you. 
+                  Email is the best way to reach me, and I’m also active on LinkedIn.
                 </p>
 
-                <div className="mt-7 flex flex-col sm:flex-row gap-4">
+                <div className="pt-2 flex flex-col sm:flex-row gap-4">
                   <a
                     href={`mailto:${profile.email}`}
-                    className={cx(
-                      "inline-flex items-center justify-center gap-2",
-                      "px-5 py-3 rounded-md font-semibold",
-                      "border-2 border-sky-600 text-sky-700",
-                      "hover:bg-sky-600 hover:text-white transition",
-                      "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
-                    )}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold border-2 border-sky-600 text-sky-700 hover:bg-sky-600 hover:text-white transition shadow-sm"
                   >
                     {profile.email}
                     <EnvelopeIcon className="h-5 w-5" />
@@ -1486,13 +1485,7 @@ function ContactPage() {
                     href={profile.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={cx(
-                      "inline-flex items-center justify-center gap-2",
-                      "px-5 py-3 rounded-md font-semibold",
-                      "border-2 border-sky-600 text-sky-700",
-                      "hover:bg-sky-600 hover:text-white transition",
-                      "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
-                    )}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold border-2 border-sky-600 text-sky-700 hover:bg-sky-600 hover:text-white transition shadow-sm"
                   >
                     LinkedIn
                     <LinkIcon className="h-5 w-5" />
@@ -1500,13 +1493,7 @@ function ContactPage() {
 
                   <a
                     href={profile.resume}
-                    className={cx(
-                      "inline-flex items-center justify-center gap-2",
-                      "px-5 py-3 rounded-md font-semibold text-white shadow-lg",
-                      "bg-gradient-to-r from-sky-600 to-emerald-500",
-                      "hover:brightness-110 hover:-translate-y-[1px] transition",
-                      "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
-                    )}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold text-white shadow-lg bg-gradient-to-r from-sky-600 to-emerald-500 hover:brightness-110 hover:-translate-y-[1px] transition"
                   >
                     View Résumé
                     <ArrowDownTrayIcon className="h-5 w-5" />
@@ -1514,42 +1501,49 @@ function ContactPage() {
                 </div>
               </div>
 
-              <div className="rounded-xl bg-sky-50 p-6 ring-1 ring-sky-100 dark:bg-sky-950/40 dark:ring-sky-900/60">
-                <h4 className="font-semibold text-sky-900 dark:text-sky-200">Quick details</h4>
-                <div className="mt-3 space-y-3 text-sm text-slate-700 dark:text-slate-200">
+              {/* RIGHT COLUMN: Sidebar (Now Aligned to Top) */}
+              <div className="rounded-xl bg-sky-50 p-6 ring-1 ring-sky-100 dark:bg-sky-950/40 dark:ring-sky-900/60 shadow-sm">
+                <h4 className="font-bold text-sky-900 dark:text-sky-200 uppercase tracking-wide text-xs">
+                  Quick details
+                </h4>
+                
+                <div className="mt-4 space-y-3 text-sm text-slate-700 dark:text-slate-200">
                   <div className="flex items-center gap-2">
-                    <MapPinIcon className="h-4 w-4 text-sky-700 dark:text-sky-200" />
-                    {profile.location}
+                    <MapPinIcon className="h-4 w-4 text-sky-700 dark:text-sky-400" />
+                    Starkville, MS
                   </div>
                   <div className="flex items-center gap-2">
-                    <CalendarIcon className="h-4 w-4 text-sky-700 dark:text-sky-200" />
+                    <CalendarIcon className="h-4 w-4 text-sky-700 dark:text-sky-400" />
                     Graduation: May 2026
                   </div>
-                 <div className="mt-4 flex flex-col gap-3">
-  <div className="flex items-center gap-2 text-sky-800 dark:text-sky-300 font-semibold uppercase text-xs tracking-wider">
-    <SparklesIcon className="h-5 w-5" />
-    Interests
-  </div>
-  
-  <div className="flex flex-wrap gap-2">
-    {[
-      "Synoptic meteorology",
-      "Wildfire climatology",
-      "Weather and society principles",
-      "Probabilistic modeling",
-      "Statistical methods"
-    ].map((interest) => (
-      <span 
-        key={interest}
-        className="px-3 py-1 rounded-full text-sm font-medium bg-sky-100/50 text-sky-800 ring-1 ring-sky-900/10 dark:bg-sky-900/30 dark:text-sky-200 dark:ring-sky-400/20"
-      >
-        {interest}
-      </span>
-    ))}
-  </div>
-</div>
+                  
+                  <div className="pt-4 border-t border-sky-200 dark:border-sky-800">
+                    <div className="flex items-center gap-2 text-sky-800 dark:text-sky-300 font-bold uppercase text-[10px] tracking-widest mb-3">
+                      <SparklesIcon className="h-4 w-4" />
+                      Interests
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "Synoptic meteorology",
+                        "Wildfire climatology",
+                        "Weather and society principles",
+                        "Probabilistic modeling",
+                        "Statistical methods"
+                      ].map((interest) => (
+                        <span 
+                          key={interest}
+                          className="px-2.5 py-1 rounded-md text-[13px] font-medium bg-white/80 text-sky-900 ring-1 ring-sky-200 dark:bg-sky-900/40 dark:text-sky-100 dark:ring-sky-700/50"
+                        >
+                          {interest}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
+              {/* End Sidebar */}
+
             </div>
           </section>
         </motion.div>

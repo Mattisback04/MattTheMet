@@ -1385,7 +1385,7 @@ function SurveyPage() {
                 </div>
 
                 <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200">
-                  I gathered anonymous responses from international students to better understand how severe weather is
+                  I gathered anonymous responses from international students at Mississippi State University to better understand how severe weather is
                   perceived and what information helps most. Your input is vital to this study. Thank you for helping
                   move this research forward.
                 </p>

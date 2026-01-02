@@ -1288,7 +1288,7 @@ function ExperiencePage() {
         <motion.div {...fadeInUp}>
           <SectionHeading
             icon={SparklesIcon}
-            title="Research & Experience"
+            title="Past Research and Experiences"
             subtitle="Selected experiences across research, operations, and communication."
           />
 
@@ -1300,22 +1300,22 @@ function ExperiencePage() {
             </motion.div>
           </motion.div>
 
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <Callout icon={DocumentTextIcon} title="How I work" tone="sky">
-              I structure projects around reproducible workflows, clear documentation, and communication-first outputs:
-              dashboards, maps, concise briefs, and stakeholder-friendly summaries.
-            </Callout>
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+  {/* Section 1: How I work */}
+  <Callout title={<span className="block w-full text-center">Methodological Approach</span>} tone="slate">
+    I structure my work around reproducible research frameworks and rigorous documentation to ensure data integrity. My output strategy is communication-centric, transforming technical analysis into high-impact dashboards, cartographic products, and stakeholder-ready briefs that prioritize clarity and utility.
+  </Callout>
 
-            <Callout icon={SparklesIcon} title="Tools I use" tone="slate">
-              Python (analysis + automation), ArcGIS Pro (spatial workflows + cartography), and modern web tools for
-              presentation &amp; outreach.
-            </Callout>
+  {/* Section 2: Tools I use */}
+  <Callout title={<span className="block w-full text-center">Technical Proficiency</span>} tone="slate">
+    I leverage a comprehensive technical stack anchored in Python for automated analysis and ArcGIS Pro for advanced spatial workflows. Additionally, I utilize modern web development technologies to craft interactive outreach platforms, ensuring scientific findings are accessible and engaging.
+  </Callout>
 
-            <Callout icon={AcademicCapIcon} title="What I want next" tone="emerald">
-              Roles where I can combine climate/wildfire research, GIS, and science communication to improve readiness
-              and response.
-            </Callout>
-          </div>
+  {/* Section 3: What I want next */}
+  <Callout title={<span className="block w-full text-center">Career Objectives</span>} tone="slate">
+    I am seeking professional opportunities at the nexus of climate resilience, wildfire dynamics, and geospatial science. My goal is to apply integrated GIS workflows and strategic science communication to enhance community readiness and optimize response protocols for critical environmental challenges.
+  </Callout>
+</div>
         </motion.div>
       </Container>
 
